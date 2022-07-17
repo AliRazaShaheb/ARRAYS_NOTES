@@ -118,4 +118,35 @@ insert dashes (-) between each two even numbers.
 For example if you accept 025468 
 the output should be 0-254-6-8.
 */
-console.log(numberSeparator("025468", "-"));
+// console.log(numberSeparator("025468", "-"));
+
+/*
+7. Write a JavaScript program 
+to sort the items of an array.
+Sample array : var arr1 = [ 3, 8, 7, 6, 5, -4, 3, 2, 1 ];
+Sample Output : -4,-3,1,2,3,5,6,7,8
+*/
+let arr1 = [3, 8, 7, 6, 5, -4, 3, 2, 1];
+let arr2 = [
+  "xyz",
+  "ali",
+  "raza",
+  "shaheb",
+  "mateen",
+  "abdul",
+  "shamsher",
+  "ali",
+  "zara"
+];
+let arr3 = [30, 99, 54, 786, 44, 1000, 200, 5, 76, 101];
+// Practice *** sort on english alphabet ***
+// sort() function sorting the array based on UTF-8 or UTF-16
+// arr2.sort()
+// console.log(arr2)
+
+// *** Q.7 Answer ***
+// arr1.sort()
+
+// Practice *** Advance sort on english alphabet ***
+arr3.sort((a, b) => a - b);
+console.log(arr3);
