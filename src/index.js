@@ -7,7 +7,9 @@ import {
 } from "./w3SourceArray/array_Clone";
 import { first } from "./w3SourceArray/first";
 import { is_array, is_array_toString } from "./w3SourceArray/is_array";
-import { last } from "./w3SourceArray/last";
+import { joinArray } from "./w3SourceArray/joinArray";
+import { last, last1, last2 } from "./w3SourceArray/last";
+import { numberSeparator } from "./w3SourceArray/numberSeparator";
 
 console.clear();
 /* 1.
@@ -83,6 +85,37 @@ Expected Output :
 [9, 0, -2]
 [7, 9, 0, -2]
 */
-console.log(last([7, 9, 0, -2]));
-console.log(last([7, 9, 0, -2], 3));
-console.log(last([7, 9, 0, -2], 6));
+// ***** solution-1 (array.prototype.slice() & reverse()) *****
+// console.log(last([7, 9, 0, -2]));
+// console.log(last([7, 9, 0, -2], 3));
+// console.log(last([7, 9, 0, -2], 6));
+
+// ***** solution-2 (array.prototype.slice() & Math.max()) *****
+// console.log(last1([7, 9, 0, -2]));
+// console.log(last1([7, 9, 0, -2], 3));
+// console.log(last1([7, 9, 0, -2], 6));
+
+// ***** solution-3 (array.prototype.slice() & Math.max()) *****
+// console.log(last2([7, 9, 0, -2]));
+// console.log(last2([7, 9, 0, -2], 3));
+// console.log(last2([7, 9, 0, -2], 6));
+
+/* 5.
+ Write a simple JavaScript program to join all elements of the following array into a string. 
+Sample array : myColor = ["Red", "Green", "White", "Black"];
+Expected Output :
+"Red,Green,White,Black"
+"Red,Green,White,Black"
+"Red+Green+White+Black"
+*/
+let myColor = ["Red", "Green", "White", "Black"];
+// console.log(joinArray(myColor, " + "));
+
+/*6.
+6. Write a JavaScript program 
+which accept a number as input and 
+insert dashes (-) between each two even numbers. 
+For example if you accept 025468 
+the output should be 0-254-6-8.
+*/
+console.log(numberSeparator("025468", "-"));
