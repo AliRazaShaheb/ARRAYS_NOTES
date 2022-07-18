@@ -34,12 +34,12 @@ export function remove_duplicate2(arr) {
 
 // NEW ES-6 way to get unique key
 // shortest way
-export function remove_duplicate3(arr) {
+export function remove_duplicate(arr) {
   return [...new Set(arr)];
 }
 
 // little long way;
-export function remove_duplicate(arr) {
+export function remove_duplicate4(arr) {
   let set = new Set(arr);
   let arr1 = [...set];
   return arr1;
