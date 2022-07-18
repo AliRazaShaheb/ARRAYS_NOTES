@@ -9,6 +9,7 @@ import { first } from "./w3SourceArray/first";
 import { is_array, is_array_toString } from "./w3SourceArray/is_array";
 import { joinArray } from "./w3SourceArray/joinArray";
 import { last, last1, last2 } from "./w3SourceArray/last";
+import { maxElementOccurance } from "./w3SourceArray/maxElementOccurance";
 import { numberSeparator } from "./w3SourceArray/numberSeparator";
 
 console.clear();
@@ -147,6 +148,15 @@ let arr3 = [30, 99, 54, 786, 44, 1000, 200, 5, 76, 101];
 // *** Q.7 Answer ***
 // arr1.sort()
 
-// Practice *** Advance sort on english alphabet ***
-arr3.sort((a, b) => a - b);
-console.log(arr3);
+// Practice *** Advance sort on numbers ***
+// arr3.sort((a, b) => a - b);
+// console.log(arr3);
+
+/* 8. 
+Write a JavaScript program 
+to find the most frequent item of an array.
+Sample array : var arr1=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+Sample Output : a ( 5 times )
+*/
+let someArr = [3, "a", "a", "a", 2, 3, "a", 3, "a", 2, 4, 9, 3];
+maxElementOccurance(someArr);
