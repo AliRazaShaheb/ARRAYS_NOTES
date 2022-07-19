@@ -2,6 +2,7 @@ import { max3Number, maxNumber, min3Number, minNumber } from "./find_max_num";
 import { findMissingNumber } from "./find_missing_number";
 import { max_min_diff, max_min_diff_b4_Highest_num } from "./max_min_diff";
 import { remove_duplicate } from "./remove_duplicate";
+import { TwoSum } from "./TwoSum";
 
 console.clear();
 
@@ -40,3 +41,12 @@ var arrayDifference = [7, 8, 4, 9, 9, 15, 3, 1, 10];
 // Notice: It is not `14` from the difference between `15` and `1` because 15 comes before 1.
 */
 // console.log(max_min_diff_b4_Highest_num(arrayDifference));
+
+/** Q.10
+ * Find Two Sum Number
+ * i.e.: given array [1,2,3] and target is 5;
+ * should return array[1,2]
+ */
+
+var array = [7, 1, 5, 9, 1, 2, 8];
+console.log(TwoSum(array, 6));
