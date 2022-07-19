@@ -75,9 +75,5 @@ export const maxElementOccurance = (arr) => {
       frequentValue = el;
     }
   }
-  return {
-    obj,
-    frequentValue,
-    maxCount
-  };
+  return `${frequentValue} (${maxCount} times)`;
 };
