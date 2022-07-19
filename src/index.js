@@ -12,6 +12,7 @@ import { last, last1, last2 } from "./w3SourceArray/last";
 import { maxElementOccurance } from "./w3SourceArray/maxElementOccurance";
 import { numberSeparator } from "./w3SourceArray/numberSeparator";
 import { swapTextCase } from "./w3SourceArray/swapTextCase";
+import { rearrange_2D_array } from "./w3SourceArray/twoD_array";
 
 console.clear();
 /* 1.
@@ -169,4 +170,28 @@ For example if you input 'The Quick Brown Fox'
 the output should be 'tHE qUICK bROWN fOX'.
 */
 let str = "The Quick Brown Fox 12 33 @ .. # tuMsDaY";
-console.log(swapTextCase(str));
+// console.log(swapTextCase(str));
+
+/*10.
+10. Write a JavaScript program 
+which prints the elements of the following array. 
+Note : Use nested for loops.
+Sample array : var a = [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7]];
+Sample Output :
+"row 0"
+" 1"
+" 2"
+" 1"
+" 24"
+"row 1"
+*/
+
+var a = [
+  [1, 2, 1, 24],
+  [8, 11, 9, 4],
+  [7, 0, 7, 27],
+  [7, 4, 28, 14],
+  [3, 10, 26, 7]
+];
+
+// console.log(rearrange_2D_array(a));
