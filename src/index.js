@@ -11,6 +11,7 @@ import { joinArray } from "./w3SourceArray/joinArray";
 import { last, last1, last2 } from "./w3SourceArray/last";
 import { maxElementOccurance } from "./w3SourceArray/maxElementOccurance";
 import { numberSeparator } from "./w3SourceArray/numberSeparator";
+import { swapTextCase } from "./w3SourceArray/swapTextCase";
 
 console.clear();
 /* 1.
@@ -159,4 +160,13 @@ Sample array : var arr1=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
 Sample Output : a ( 5 times )
 */
 let someArr = [3, "a", "a", "a", 2, 3, "a", 3, "a", 2, 4, 9, 3];
-console.log(maxElementOccurance(someArr));
+// console.log(maxElementOccurance(someArr));
+
+/* 9.
+9. Write a JavaScript program which accept 
+a string as input and swap the case of each character. 
+For example if you input 'The Quick Brown Fox' 
+the output should be 'tHE qUICK bROWN fOX'.
+*/
+let str = "The Quick Brown Fox 12 33 @ .. # tuMsDaY";
+console.log(swapTextCase(str));
