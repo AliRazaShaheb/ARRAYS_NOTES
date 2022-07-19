@@ -39,4 +39,4 @@ var arrayDifference = [7, 8, 4, 9, 9, 15, 3, 1, 10];
 // [7, 8, 4, 9, 9, 15, 3, 1, 10] would return `11` based on the difference between `4` and `15`
 // Notice: It is not `14` from the difference between `15` and `1` because 15 comes before 1.
 */
-console.log(max_min_diff_b4_Highest_num(arrayDifference));
+// console.log(max_min_diff_b4_Highest_num(arrayDifference));

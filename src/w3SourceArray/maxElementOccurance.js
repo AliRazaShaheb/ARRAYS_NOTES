@@ -1,4 +1,4 @@
-export const maxElementOccurance = (arr) => {
+export const maxElementOccurance1 = (arr) => {
   let mf = 1;
   let m = 0;
   let item;
@@ -15,4 +15,48 @@ export const maxElementOccurance = (arr) => {
     m = 0;
   }
   return `${item} ( ${mf} times )`;
+};
+
+export const maxElementOccurance2 = (arr) => {
+  //if array length is not 0 then move further
+  if (!arr.length) return null;
+  const obj = {};
+  let frequentValue = 0,
+    maxCount = 1;
+
+  //itirate over array
+  for (let i = 0; i < arr.length; i++) {
+    let el = arr[i];
+    if (!obj[el]) obj[el] = 1;
+    else obj[el]++;
+
+    if (obj[el] > maxCount) {
+      maxCount = obj[el];
+      frequentValue = el;
+    }
+  }
+  return {
+    obj,
+    frequentValue,
+    maxCount
+  };
+};
+
+export const maxElementOccurance = (arr) => {
+  //if array length is not 0 then move further
+  if (!arr.length) return null;
+  const obj = {};
+  let frequentValue = 0,
+    maxCount = 1;
+
+  //itirate over array
+  for (let el of arr) {
+    !obj[el] ? (obj[el] = 1) : obj[el]++;
+    obj[el] > maxCount && ((maxCount = obj[el]), (frequentValue = el));
+  }
+  return {
+    obj,
+    frequentValue,
+    maxCount
+  };
 };
