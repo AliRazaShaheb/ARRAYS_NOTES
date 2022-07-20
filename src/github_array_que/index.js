@@ -48,5 +48,5 @@ var arrayDifference = [7, 8, 4, 9, 9, 15, 3, 1, 10];
  * should return array[1,2]
  */
 
-var array = [7, 1, 5, 9, 1, 2, 8];
-console.log(TwoSum(array, 6));
+var array2 = [7, 1, 5, 9, 1, 2, 8];
+console.log(TwoSum(array2, 6));

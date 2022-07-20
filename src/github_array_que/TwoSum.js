@@ -24,7 +24,7 @@ export const TwoSum1 = (arr, target) => {
   return result;
 };
 
-// Solution -2 deepa chaurasiya linkedin
+// Solution -2 deepa chaurasiya linkedin (hash method)
 export const TwoSum2 = (arr, target) => {
   const result = {};
   for (let i = 0; i < arr.length; i++) {
@@ -37,30 +37,25 @@ export const TwoSum2 = (arr, target) => {
   return result;
 };
 
-// solution -3 (same as solution 2) hashing method
+// Solution -3 sorting method
+export const TwoSum = (arr, target) => {
+  // result container array
+  const result = [];
+  // sorted the incoming array
+  arr.sort((a, b) => a - b);
 
-// export const Twosum = (arr, target) => {
-//   const result = {};
-//   for (const number of arr) {
-//     let desiredOutput = target - number;
-//     if (desiredOutput in result) {
-//       [desiredOutput, number];
-//     } else {
-//       result[number] = true;
-//     }
-//   }
-//   return [];
-// };
+  // custom pointers
+  let leftPointer = 0;
+  let rightPointer = arr.length - 1;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[leftPointer] + arr[rightPointer] === target) {
+      return [arr[leftPointer], arr[rightPointer]];
+    } else if (arr[leftPointer] + arr[rightPointer] < target) {
+      leftPointer++;
+    } else if (arr[leftPointer] + arr[rightPointer] > target) {
+      rightPointer--;
+    }
+  }
 
-// export function Twosum(array, targetSum) {
-//   let numbersObject = {};
-//   for (const number of array) {
-//     let numberWeAreChecking = targetSum - number;
-//     if (numberWeAreChecking in numbersObject) {
-//       return [numberWeAreChecking, number];
-//     } else {
-//       numbersObject[number] = true;
-//     }
-//   }
-//   return [];
-// }
+  return result;
+};
