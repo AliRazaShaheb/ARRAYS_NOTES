@@ -1,4 +1,5 @@
 import "./styles.css";
+import { addNDisplayArr } from "./w3SourceArray/addNDisplayArr";
 import {
   array_Clone_Slice,
   array_Clone_Map,
@@ -195,3 +196,5 @@ var a = [
 ];
 
 // console.log(rearrange_2D_array(a));
+
+addNDisplayArr();
